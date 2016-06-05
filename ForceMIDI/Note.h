@@ -20,6 +20,8 @@ typedef int Octave;
     Byte midiNumber;
 }
 
+- (id)initWithLetter:(NSString *)letter octave:(Octave)octave;
+
 - (id)initWithLetter:(NSString *)letter modifier:(enum NoteModifier)modifier octave:(Octave)octave;
 
 - (id)initWithMidiNumber:(Byte)number;

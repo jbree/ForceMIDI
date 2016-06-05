@@ -10,6 +10,10 @@
 
 @implementation Note
 
+- (id)initWithLetter:(NSString *)letter octave:(Octave)octave {
+    return [self initWithLetter:letter modifier:Natural octave:octave];
+}
+
 - (id)initWithLetter:(NSString *)letter modifier:(enum NoteModifier)modifier octave:(Octave)octave {
     Byte base;
     if([letter isEqualToString:@"C"]) {
