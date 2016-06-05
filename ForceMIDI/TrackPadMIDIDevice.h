@@ -8,10 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+#import "Note.h"
+
+enum Region {
+    TopLeft = 0,
+    TopRight = 1,
+    BottomLeft = 2,
+    BottomRight = 3
+};
+
 @interface TrackPadMIDIDevice : NSObject
 
-//- (void)setNote:(Note *)note forRegion:(int)region;
+- (void)setNote:(Note *)note forRegion:(enum Region)region;
 
-@property (assign, readwrite) BOOL enabled;
+- (void)setMIDIEnabled:(BOOL)enabled;
 
 @end
