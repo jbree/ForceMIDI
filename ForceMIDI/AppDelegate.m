@@ -9,11 +9,11 @@
 #import "AppDelegate.h"
 
 #import "StatusMenuController.h"
-#import "TouchButtons.h"
+#import "TrackPadMIDIDevice.h"
 
 @interface AppDelegate () {
-    TouchButtons* buttons;
     StatusMenuController* menu;
+    TrackPadMIDIDevice* trackpad;
 }
 
 @end
@@ -22,11 +22,30 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     menu = [[StatusMenuController alloc] init];
+    trackpad = [[TrackPadMIDIDevice alloc] init];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(enableTrackPadMIDI)
+                                                 name:@"userDidEnableForceMIDI" object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(disableTrackPadMIDI)
+                                                 name:@"userDidDisableForceMIDI" object:nil];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
+
+- (void)enableTrackPadMIDI {
+    [trackpad setMIDIEnabled:true];
+}
+
+- (void)disableTrackPadMIDI {
+    [trackpad setMIDIEnabled:false];
+}
+
+
 
 
 @end
