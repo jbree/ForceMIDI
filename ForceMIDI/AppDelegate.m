@@ -8,18 +8,25 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+#import "StatusMenuController.h"
+#import "TouchButtons.h"
+
+@interface AppDelegate () {
+    TouchButtons* buttons;
+    StatusMenuController* menu;
+}
 
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    menu = [[StatusMenuController alloc] init];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
+
 
 @end

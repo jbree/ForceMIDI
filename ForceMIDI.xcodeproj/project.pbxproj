@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BF0FDD24D788345A6FAB5DE /* libPods-ForceMIDI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D59AD3FC917B948D8B4F793 /* libPods-ForceMIDI.a */; };
+		401D03551D03CDE000C781AE /* TouchButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 401D03541D03CDE000C781AE /* TouchButtons.m */; };
+		401D03581D03D5BA00C781AE /* Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 401D03571D03D5BA00C781AE /* Touch.m */; };
+		401D035A1D03E1E400C781AE /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D03591D03E1E400C781AE /* CoreMIDI.framework */; };
+		40369CD61D04ABF0008914DE /* StatusMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40369CD51D04ABF0008914DE /* StatusMenuController.m */; };
+		40369CD91D04B1F3008914DE /* TrackPadMIDIDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 40369CD81D04B1F3008914DE /* TrackPadMIDIDevice.m */; };
+		40369CDC1D04B3FA008914DE /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 40369CDB1D04B3FA008914DE /* Note.m */; };
+		40369CDE1D04B7CC008914DE /* NoteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40369CDD1D04B7CC008914DE /* NoteTest.m */; };
 		40DFD2951D03BEA40079BAF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD2941D03BEA40079BAF9 /* AppDelegate.m */; };
 		40DFD2981D03BEA40079BAF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD2971D03BEA40079BAF9 /* main.m */; };
 		40DFD29B1D03BEA40079BAF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD29A1D03BEA40079BAF9 /* ViewController.m */; };
 		40DFD29D1D03BEA50079BAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40DFD29C1D03BEA50079BAF9 /* Assets.xcassets */; };
 		40DFD2A01D03BEA50079BAF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DFD29E1D03BEA50079BAF9 /* Main.storyboard */; };
 		40DFD2AB1D03BEA50079BAF9 /* ForceMIDITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD2AA1D03BEA50079BAF9 /* ForceMIDITests.m */; };
-		40DFD2B61D03BEA50079BAF9 /* ForceMIDIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD2B51D03BEA50079BAF9 /* ForceMIDIUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,16 +31,22 @@
 			remoteGlobalIDString = 40DFD28F1D03BEA40079BAF9;
 			remoteInfo = ForceMIDI;
 		};
-		40DFD2B21D03BEA50079BAF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 40DFD2881D03BEA40079BAF9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 40DFD28F1D03BEA40079BAF9;
-			remoteInfo = ForceMIDI;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D59AD3FC917B948D8B4F793 /* libPods-ForceMIDI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForceMIDI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		401D03531D03CDE000C781AE /* TouchButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchButtons.h; sourceTree = "<group>"; };
+		401D03541D03CDE000C781AE /* TouchButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchButtons.m; sourceTree = "<group>"; };
+		401D03561D03D5BA00C781AE /* Touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch.h; sourceTree = "<group>"; };
+		401D03571D03D5BA00C781AE /* Touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch.m; sourceTree = "<group>"; };
+		401D03591D03E1E400C781AE /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		40369CD41D04ABF0008914DE /* StatusMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMenuController.h; sourceTree = "<group>"; };
+		40369CD51D04ABF0008914DE /* StatusMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusMenuController.m; sourceTree = "<group>"; };
+		40369CD71D04B1F3008914DE /* TrackPadMIDIDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackPadMIDIDevice.h; sourceTree = "<group>"; };
+		40369CD81D04B1F3008914DE /* TrackPadMIDIDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackPadMIDIDevice.m; sourceTree = "<group>"; };
+		40369CDA1D04B3FA008914DE /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		40369CDB1D04B3FA008914DE /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		40369CDD1D04B7CC008914DE /* NoteTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteTest.m; sourceTree = "<group>"; };
 		40DFD2901D03BEA40079BAF9 /* ForceMIDI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForceMIDI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DFD2931D03BEA40079BAF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		40DFD2941D03BEA40079BAF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,9 +59,8 @@
 		40DFD2A61D03BEA50079BAF9 /* ForceMIDITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForceMIDITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DFD2AA1D03BEA50079BAF9 /* ForceMIDITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForceMIDITests.m; sourceTree = "<group>"; };
 		40DFD2AC1D03BEA50079BAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40DFD2B11D03BEA50079BAF9 /* ForceMIDIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForceMIDIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		40DFD2B51D03BEA50079BAF9 /* ForceMIDIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForceMIDIUITests.m; sourceTree = "<group>"; };
-		40DFD2B71D03BEA50079BAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		970289E5D5948970C405DE2D /* Pods-ForceMIDI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceMIDI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForceMIDI/Pods-ForceMIDI.debug.xcconfig"; sourceTree = "<group>"; };
+		F857F498D6CC9047B83AC3E9 /* Pods-ForceMIDI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForceMIDI.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForceMIDI/Pods-ForceMIDI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401D035A1D03E1E400C781AE /* CoreMIDI.framework in Frameworks */,
+				3BF0FDD24D788345A6FAB5DE /* libPods-ForceMIDI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,23 +80,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40DFD2AE1D03BEA50079BAF9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D17284153B97EC4CD95A5B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				970289E5D5948970C405DE2D /* Pods-ForceMIDI.debug.xcconfig */,
+				F857F498D6CC9047B83AC3E9 /* Pods-ForceMIDI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		40DFD2871D03BEA40079BAF9 = {
 			isa = PBXGroup;
 			children = (
 				40DFD2921D03BEA40079BAF9 /* ForceMIDI */,
 				40DFD2A91D03BEA50079BAF9 /* ForceMIDITests */,
-				40DFD2B41D03BEA50079BAF9 /* ForceMIDIUITests */,
 				40DFD2911D03BEA40079BAF9 /* Products */,
+				3D17284153B97EC4CD95A5B9 /* Pods */,
+				667DCEAB38FA446FAF2E8E73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +108,6 @@
 			children = (
 				40DFD2901D03BEA40079BAF9 /* ForceMIDI.app */,
 				40DFD2A61D03BEA50079BAF9 /* ForceMIDITests.xctest */,
-				40DFD2B11D03BEA50079BAF9 /* ForceMIDIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,12 +117,22 @@
 			children = (
 				40DFD2931D03BEA40079BAF9 /* AppDelegate.h */,
 				40DFD2941D03BEA40079BAF9 /* AppDelegate.m */,
+				40369CDA1D04B3FA008914DE /* Note.h */,
+				40369CDB1D04B3FA008914DE /* Note.m */,
+				40369CD71D04B1F3008914DE /* TrackPadMIDIDevice.h */,
+				40369CD81D04B1F3008914DE /* TrackPadMIDIDevice.m */,
+				401D03531D03CDE000C781AE /* TouchButtons.h */,
+				401D03541D03CDE000C781AE /* TouchButtons.m */,
+				401D03561D03D5BA00C781AE /* Touch.h */,
+				401D03571D03D5BA00C781AE /* Touch.m */,
 				40DFD2991D03BEA40079BAF9 /* ViewController.h */,
 				40DFD29A1D03BEA40079BAF9 /* ViewController.m */,
 				40DFD29C1D03BEA50079BAF9 /* Assets.xcassets */,
 				40DFD29E1D03BEA50079BAF9 /* Main.storyboard */,
 				40DFD2A11D03BEA50079BAF9 /* Info.plist */,
 				40DFD2961D03BEA40079BAF9 /* Supporting Files */,
+				40369CD41D04ABF0008914DE /* StatusMenuController.h */,
+				40369CD51D04ABF0008914DE /* StatusMenuController.m */,
 			);
 			path = ForceMIDI;
 			sourceTree = "<group>";
@@ -123,18 +149,19 @@
 			isa = PBXGroup;
 			children = (
 				40DFD2AA1D03BEA50079BAF9 /* ForceMIDITests.m */,
+				40369CDD1D04B7CC008914DE /* NoteTest.m */,
 				40DFD2AC1D03BEA50079BAF9 /* Info.plist */,
 			);
 			path = ForceMIDITests;
 			sourceTree = "<group>";
 		};
-		40DFD2B41D03BEA50079BAF9 /* ForceMIDIUITests */ = {
+		667DCEAB38FA446FAF2E8E73 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				40DFD2B51D03BEA50079BAF9 /* ForceMIDIUITests.m */,
-				40DFD2B71D03BEA50079BAF9 /* Info.plist */,
+				401D03591D03E1E400C781AE /* CoreMIDI.framework */,
+				3D59AD3FC917B948D8B4F793 /* libPods-ForceMIDI.a */,
 			);
-			path = ForceMIDIUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40DFD2BA1D03BEA50079BAF9 /* Build configuration list for PBXNativeTarget "ForceMIDI" */;
 			buildPhases = (
+				058E16B8BCE8F11D2DE36972 /* [CP] Check Pods Manifest.lock */,
 				40DFD28C1D03BEA40079BAF9 /* Sources */,
 				40DFD28D1D03BEA40079BAF9 /* Frameworks */,
 				40DFD28E1D03BEA40079BAF9 /* Resources */,
+				59C2FF892C2DD54A6F546EFD /* [CP] Embed Pods Frameworks */,
+				667770D366A5241A0DE08C13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,24 +205,6 @@
 			productReference = 40DFD2A61D03BEA50079BAF9 /* ForceMIDITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		40DFD2B01D03BEA50079BAF9 /* ForceMIDIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 40DFD2C01D03BEA50079BAF9 /* Build configuration list for PBXNativeTarget "ForceMIDIUITests" */;
-			buildPhases = (
-				40DFD2AD1D03BEA50079BAF9 /* Sources */,
-				40DFD2AE1D03BEA50079BAF9 /* Frameworks */,
-				40DFD2AF1D03BEA50079BAF9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				40DFD2B31D03BEA50079BAF9 /* PBXTargetDependency */,
-			);
-			name = ForceMIDIUITests;
-			productName = ForceMIDIUITests;
-			productReference = 40DFD2B11D03BEA50079BAF9 /* ForceMIDIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,10 +218,6 @@
 						CreatedOnToolsVersion = 7.3;
 					};
 					40DFD2A51D03BEA50079BAF9 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 40DFD28F1D03BEA40079BAF9;
-					};
-					40DFD2B01D03BEA50079BAF9 = {
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = 40DFD28F1D03BEA40079BAF9;
 					};
@@ -230,7 +238,6 @@
 			targets = (
 				40DFD28F1D03BEA40079BAF9 /* ForceMIDI */,
 				40DFD2A51D03BEA50079BAF9 /* ForceMIDITests */,
-				40DFD2B01D03BEA50079BAF9 /* ForceMIDIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,23 +259,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40DFD2AF1D03BEA50079BAF9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		058E16B8BCE8F11D2DE36972 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		59C2FF892C2DD54A6F546EFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForceMIDI/Pods-ForceMIDI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		667770D366A5241A0DE08C13 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForceMIDI/Pods-ForceMIDI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40DFD28C1D03BEA40079BAF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40369CDC1D04B3FA008914DE /* Note.m in Sources */,
 				40DFD29B1D03BEA40079BAF9 /* ViewController.m in Sources */,
+				40369CD61D04ABF0008914DE /* StatusMenuController.m in Sources */,
+				401D03581D03D5BA00C781AE /* Touch.m in Sources */,
+				40369CD91D04B1F3008914DE /* TrackPadMIDIDevice.m in Sources */,
 				40DFD2981D03BEA40079BAF9 /* main.m in Sources */,
 				40DFD2951D03BEA40079BAF9 /* AppDelegate.m in Sources */,
+				401D03551D03CDE000C781AE /* TouchButtons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,14 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40DFD2AB1D03BEA50079BAF9 /* ForceMIDITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		40DFD2AD1D03BEA50079BAF9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				40DFD2B61D03BEA50079BAF9 /* ForceMIDIUITests.m in Sources */,
+				40369CDE1D04B7CC008914DE /* NoteTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +341,6 @@
 			isa = PBXTargetDependency;
 			target = 40DFD28F1D03BEA40079BAF9 /* ForceMIDI */;
 			targetProxy = 40DFD2A71D03BEA50079BAF9 /* PBXContainerItemProxy */;
-		};
-		40DFD2B31D03BEA50079BAF9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 40DFD28F1D03BEA40079BAF9 /* ForceMIDI */;
-			targetProxy = 40DFD2B21D03BEA50079BAF9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -398,6 +439,7 @@
 		};
 		40DFD2BB1D03BEA50079BAF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 970289E5D5948970C405DE2D /* Pods-ForceMIDI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -410,6 +452,7 @@
 		};
 		40DFD2BC1D03BEA50079BAF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F857F498D6CC9047B83AC3E9 /* Pods-ForceMIDI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -446,30 +489,6 @@
 			};
 			name = Release;
 		};
-		40DFD2C11D03BEA50079BAF9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ForceMIDIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jbreeden.ForceMIDIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ForceMIDI;
-			};
-			name = Debug;
-		};
-		40DFD2C21D03BEA50079BAF9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ForceMIDIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jbreeden.ForceMIDIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ForceMIDI;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -489,6 +508,7 @@
 				40DFD2BC1D03BEA50079BAF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40DFD2BD1D03BEA50079BAF9 /* Build configuration list for PBXNativeTarget "ForceMIDITests" */ = {
 			isa = XCConfigurationList;
@@ -497,14 +517,7 @@
 				40DFD2BF1D03BEA50079BAF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		40DFD2C01D03BEA50079BAF9 /* Build configuration list for PBXNativeTarget "ForceMIDIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				40DFD2C11D03BEA50079BAF9 /* Debug */,
-				40DFD2C21D03BEA50079BAF9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

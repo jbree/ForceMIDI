@@ -1,0 +1,17 @@
+PODS:
+  - M5MultitouchSupport (1.1.0):
+    - M5MultitouchSupport/Internal (= 1.1.0)
+  - M5MultitouchSupport/Internal (1.1.0)
+  - MIKMIDI (1.6.0)
+
+DEPENDENCIES:
+  - M5MultitouchSupport
+  - MIKMIDI (~> 1.6.0)
+
+SPEC CHECKSUMS:
+  M5MultitouchSupport: ea076d72161140e3d37fb3d474b597aa5cd15484
+  MIKMIDI: f756508a4e11d9cee16feb3bbd801ba13f1ec007
+
+PODFILE CHECKSUM: ff9dc48649a4663f423d1f298a13ade3180c1d75
+
+COCOAPODS: 1.0.1
