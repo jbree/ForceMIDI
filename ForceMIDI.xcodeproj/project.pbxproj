@@ -15,6 +15,7 @@
 		40369CD91D04B1F3008914DE /* TrackPadMIDIDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 40369CD81D04B1F3008914DE /* TrackPadMIDIDevice.m */; };
 		40369CDC1D04B3FA008914DE /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 40369CDB1D04B3FA008914DE /* Note.m */; };
 		40369CDE1D04B7CC008914DE /* NoteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40369CDD1D04B7CC008914DE /* NoteTest.m */; };
+		40369CE41D04E290008914DE /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 40369CE31D04E290008914DE /* Images */; };
 		40DFD2951D03BEA40079BAF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD2941D03BEA40079BAF9 /* AppDelegate.m */; };
 		40DFD2981D03BEA40079BAF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD2971D03BEA40079BAF9 /* main.m */; };
 		40DFD29B1D03BEA40079BAF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD29A1D03BEA40079BAF9 /* ViewController.m */; };
@@ -47,6 +48,7 @@
 		40369CDA1D04B3FA008914DE /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		40369CDB1D04B3FA008914DE /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		40369CDD1D04B7CC008914DE /* NoteTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteTest.m; sourceTree = "<group>"; };
+		40369CE31D04E290008914DE /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		40DFD2901D03BEA40079BAF9 /* ForceMIDI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForceMIDI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DFD2931D03BEA40079BAF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		40DFD2941D03BEA40079BAF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		40DFD2871D03BEA40079BAF9 = {
 			isa = PBXGroup;
 			children = (
+				40369CE31D04E290008914DE /* Images */,
 				40DFD2921D03BEA40079BAF9 /* ForceMIDI */,
 				40DFD2A91D03BEA50079BAF9 /* ForceMIDITests */,
 				40DFD2911D03BEA40079BAF9 /* Products */,
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40DFD29D1D03BEA50079BAF9 /* Assets.xcassets in Resources */,
+				40369CE41D04E290008914DE /* Images in Resources */,
 				40DFD2A01D03BEA50079BAF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
