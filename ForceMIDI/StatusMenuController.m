@@ -20,24 +20,36 @@
 
 - (id)init {
     if(self = [super init]) {
-        [self activateStatusMenu];
+        [self initializeStatusMenu];
     }
     return self;
 }
 
-- (void)activateStatusMenu {
+- (void)initializeStatusMenu {
     NSStatusBar *bar = [NSStatusBar systemStatusBar];
-
     menuItem = [bar statusItemWithLength:NSVariableStatusItemLength];
-    [[menuItem button] setTitle:@"MIDI"];
 
-    [[menuItem button] setTarget:self];
+    NSButton *button = [menuItem button];
+    NSImage *offImage = [NSImage imageNamed:@"MIDI"];
+    [offImage setTemplate:YES];
+    NSImage *onImage = [NSImage imageNamed:@"MIDIOn"];
+    [onImage setTemplate:YES];
+
+    [button setButtonType:NSToggleButton];
+    [button setTitle:@"MIDI"];
+    [button setImage:offImage];
+    [button setAlternateImage:onImage];
+
+    [button setTarget:self];
+    [button setAction:@selector(toggleMenuItem)];
 }
 
-- (void)mouseDown:(NSEvent*)event {
-    NSButton* button = [menuItem button];
-
-    [button setBordered:![button isBordered]];
+- (void)toggleMenuItem {
+    if([[menuItem button] state] == NSOnState) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"userDidEnableForceMIDI" object:self];
+    } else {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"userDidDisableForceMIDI" object:self];
+    }
 }
 
 @end
