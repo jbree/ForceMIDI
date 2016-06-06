@@ -38,11 +38,11 @@
 }
 
 - (void)enableTrackPadMIDI {
-    [trackpad setMIDIEnabled:true];
+    [trackpad setEnabled:YES];
 }
 
 - (void)disableTrackPadMIDI {
-    [trackpad setMIDIEnabled:false];
+    [trackpad setEnabled:NO];
 }
 
 

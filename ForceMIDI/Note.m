@@ -32,7 +32,7 @@
         base = 23;
     }
 
-    midiNumber = base + modifier + octave * 12;
+    midiNumber = base + modifier + octave * 12 + 12;
     return self;
 }
 
