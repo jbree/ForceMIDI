@@ -21,6 +21,6 @@ enum Region {
 
 - (void)setNote:(Note *)note forRegion:(enum Region)region;
 
-- (void)setMIDIEnabled:(BOOL)enabled;
+@property (assign, readwrite) BOOL enabled;
 
 @end
