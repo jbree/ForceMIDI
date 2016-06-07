@@ -17,7 +17,7 @@ enum Region {
     BottomRight = 3
 };
 
-@interface TrackPadMIDIDevice : NSObject
+@interface TrackPadMIDIDevice <FingerDelegate> : NSObject
 
 - (void)setNote:(Note *)note forRegion:(enum Region)region;
 
