@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 
-#import "StatusMenuController.h"
 #import "TrackPadMIDIDevice.h"
 
 @interface AppDelegate () {
