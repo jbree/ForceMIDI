@@ -695,10 +695,10 @@
             </objects>
             <point key="canvasLocation" x="272" y="379"/>
         </scene>
-        <!--View Controller-->
+        <!--Preferences View Controller-->
         <scene sceneID="Dys-Z8-zqj">
             <objects>
-                <viewController id="FPn-ac-Vsw" sceneMemberID="viewController">
+                <viewController id="FPn-ac-Vsw" customClass="PreferencesViewController" sceneMemberID="viewController">
                     <view key="view" id="s2Q-Sa-U9U">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="440"/>
                         <autoresizingMask key="autoresizingMask"/>
