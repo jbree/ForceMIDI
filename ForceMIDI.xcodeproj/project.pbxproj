@@ -16,7 +16,6 @@
 		40682F451D0676BE008B0160 /* Finger.m in Sources */ = {isa = PBXBuildFile; fileRef = 40682F441D0676BE008B0160 /* Finger.m */; };
 		40DFD2951D03BEA40079BAF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD2941D03BEA40079BAF9 /* AppDelegate.m */; };
 		40DFD2981D03BEA40079BAF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD2971D03BEA40079BAF9 /* main.m */; };
-		40DFD29B1D03BEA40079BAF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD29A1D03BEA40079BAF9 /* ViewController.m */; };
 		40DFD29D1D03BEA50079BAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40DFD29C1D03BEA50079BAF9 /* Assets.xcassets */; };
 		40DFD2A01D03BEA50079BAF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DFD29E1D03BEA50079BAF9 /* Main.storyboard */; };
 		40DFD2AB1D03BEA50079BAF9 /* ForceMIDITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DFD2AA1D03BEA50079BAF9 /* ForceMIDITests.m */; };
@@ -48,8 +47,6 @@
 		40DFD2931D03BEA40079BAF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		40DFD2941D03BEA40079BAF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		40DFD2971D03BEA40079BAF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		40DFD2991D03BEA40079BAF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		40DFD29A1D03BEA40079BAF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		40DFD29C1D03BEA50079BAF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40DFD29F1D03BEA50079BAF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40DFD2A11D03BEA50079BAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,8 +117,6 @@
 				40369CDB1D04B3FA008914DE /* Note.m */,
 				40369CD71D04B1F3008914DE /* TrackPadMIDIDevice.h */,
 				40369CD81D04B1F3008914DE /* TrackPadMIDIDevice.m */,
-				40DFD2991D03BEA40079BAF9 /* ViewController.h */,
-				40DFD29A1D03BEA40079BAF9 /* ViewController.m */,
 				40DFD29C1D03BEA50079BAF9 /* Assets.xcassets */,
 				40DFD29E1D03BEA50079BAF9 /* Main.storyboard */,
 				40DFD2A11D03BEA50079BAF9 /* Info.plist */,
@@ -310,7 +305,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				40369CDC1D04B3FA008914DE /* Note.m in Sources */,
-				40DFD29B1D03BEA40079BAF9 /* ViewController.m in Sources */,
 				40369CD91D04B1F3008914DE /* TrackPadMIDIDevice.m in Sources */,
 				40DFD2981D03BEA40079BAF9 /* main.m in Sources */,
 				40DFD2951D03BEA40079BAF9 /* AppDelegate.m in Sources */,

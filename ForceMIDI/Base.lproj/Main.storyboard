@@ -675,7 +675,7 @@
                 </menu>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58.5" y="-35"/>
+            <point key="canvasLocation" x="272.5" y="-29"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="Q1e-cw-P5B">
@@ -703,18 +703,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="440"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="EZv-qx-K4X">
-                                <rect key="frame" x="17" y="16" width="366" height="244"/>
-                                <view key="contentView" id="S98-lc-4DQ">
-                                    <rect key="frame" x="1" y="1" width="364" height="228"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="bdK-7d-qXo"/>
-                                </constraints>
-                                <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </box>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQC-RQ-4B9">
                                 <rect key="frame" x="98" y="402" width="108" height="18"/>
                                 <buttonCell key="cell" type="check" title="Start on Login" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="TBZ-R5-cvE">
@@ -745,6 +733,40 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <box borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="EZv-qx-K4X">
+                                <rect key="frame" x="17" y="16" width="366" height="244"/>
+                                <view key="contentView" id="S98-lc-4DQ">
+                                    <rect key="frame" x="1" y="1" width="364" height="228"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="FHn-lY-0QY">
+                                            <rect key="frame" x="2" y="112" width="360" height="5"/>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <font key="titleFont" metaFont="system"/>
+                                        </box>
+                                        <box horizontalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="QWD-wR-Wr5">
+                                            <rect key="frame" x="180" y="3" width="5" height="240"/>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <font key="titleFont" metaFont="system"/>
+                                        </box>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FHn-lY-0QY" firstAttribute="centerY" secondItem="S98-lc-4DQ" secondAttribute="centerY" id="0Rf-kQ-y36"/>
+                                        <constraint firstItem="QWD-wR-Wr5" firstAttribute="centerX" secondItem="S98-lc-4DQ" secondAttribute="centerX" id="sD9-Ev-RZQ"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="QWD-wR-Wr5" secondAttribute="bottom" id="0VW-h1-khr"/>
+                                    <constraint firstAttribute="trailing" secondItem="FHn-lY-0QY" secondAttribute="trailing" id="6n7-eu-Bvv"/>
+                                    <constraint firstItem="FHn-lY-0QY" firstAttribute="leading" secondItem="EZv-qx-K4X" secondAttribute="leading" id="WLX-44-kyP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="bdK-7d-qXo"/>
+                                    <constraint firstItem="QWD-wR-Wr5" firstAttribute="top" secondItem="EZv-qx-K4X" secondAttribute="top" id="jAm-CZ-FsX"/>
+                                </constraints>
+                                <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </box>
                         </subviews>
                         <constraints>
                             <constraint firstItem="EZv-qx-K4X" firstAttribute="leading" secondItem="s2Q-Sa-U9U" secondAttribute="leading" constant="20" symbolic="YES" id="cUi-JV-lnz"/>
@@ -755,7 +777,7 @@
                 </viewController>
                 <customObject id="2co-Fn-4fD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="439"/>
+            <point key="canvasLocation" x="878" y="374"/>
         </scene>
     </scenes>
 </document>
