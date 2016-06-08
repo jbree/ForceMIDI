@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3BF0FDD24D788345A6FAB5DE /* libPods-ForceMIDI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D59AD3FC917B948D8B4F793 /* libPods-ForceMIDI.a */; };
 		401D035A1D03E1E400C781AE /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401D03591D03E1E400C781AE /* CoreMIDI.framework */; };
-		40369CD61D04ABF0008914DE /* StatusMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40369CD51D04ABF0008914DE /* StatusMenuController.m */; };
 		40369CD91D04B1F3008914DE /* TrackPadMIDIDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 40369CD81D04B1F3008914DE /* TrackPadMIDIDevice.m */; };
 		40369CDC1D04B3FA008914DE /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 40369CDB1D04B3FA008914DE /* Note.m */; };
 		40369CDE1D04B7CC008914DE /* NoteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40369CDD1D04B7CC008914DE /* NoteTest.m */; };
@@ -36,8 +35,6 @@
 /* Begin PBXFileReference section */
 		3D59AD3FC917B948D8B4F793 /* libPods-ForceMIDI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForceMIDI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		401D03591D03E1E400C781AE /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
-		40369CD41D04ABF0008914DE /* StatusMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMenuController.h; sourceTree = "<group>"; };
-		40369CD51D04ABF0008914DE /* StatusMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusMenuController.m; sourceTree = "<group>"; };
 		40369CD71D04B1F3008914DE /* TrackPadMIDIDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackPadMIDIDevice.h; sourceTree = "<group>"; };
 		40369CD81D04B1F3008914DE /* TrackPadMIDIDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackPadMIDIDevice.m; sourceTree = "<group>"; };
 		40369CDA1D04B3FA008914DE /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
@@ -129,8 +126,6 @@
 				40DFD29E1D03BEA50079BAF9 /* Main.storyboard */,
 				40DFD2A11D03BEA50079BAF9 /* Info.plist */,
 				40DFD2961D03BEA40079BAF9 /* Supporting Files */,
-				40369CD41D04ABF0008914DE /* StatusMenuController.h */,
-				40369CD51D04ABF0008914DE /* StatusMenuController.m */,
 				40682F431D0676BE008B0160 /* Finger.h */,
 				40682F441D0676BE008B0160 /* Finger.m */,
 			);
@@ -316,7 +311,6 @@
 			files = (
 				40369CDC1D04B3FA008914DE /* Note.m in Sources */,
 				40DFD29B1D03BEA40079BAF9 /* ViewController.m in Sources */,
-				40369CD61D04ABF0008914DE /* StatusMenuController.m in Sources */,
 				40369CD91D04B1F3008914DE /* TrackPadMIDIDevice.m in Sources */,
 				40DFD2981D03BEA40079BAF9 /* main.m in Sources */,
 				40DFD2951D03BEA40079BAF9 /* AppDelegate.m in Sources */,

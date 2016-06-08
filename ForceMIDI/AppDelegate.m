@@ -12,8 +12,10 @@
 #import "TrackPadMIDIDevice.h"
 
 @interface AppDelegate () {
-    StatusMenuController* menu;
     TrackPadMIDIDevice* trackpad;
+
+    NSStatusItem* statusItem;
+    NSMenu *menu;
 }
 
 @end
@@ -21,31 +23,94 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    menu = [[StatusMenuController alloc] init];
     trackpad = [[TrackPadMIDIDevice alloc] init];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(enableTrackPadMIDI)
-                                                 name:@"userDidEnableForceMIDI" object:nil];
-
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(disableTrackPadMIDI)
-                                                 name:@"userDidDisableForceMIDI" object:nil];
+    [self initializeStatusMenu];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
-}
-
-- (void)enableTrackPadMIDI {
-    [trackpad setEnabled:YES];
-}
-
-- (void)disableTrackPadMIDI {
     [trackpad setEnabled:NO];
 }
 
+- (void)enableTrackPadMIDI {
+    NSButton *button = [statusItem button];
 
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+        [trackpad setEnabled:YES];
+    });
+
+    // turn this into a toggle button so that the next click will disable trackpad midi
+    [button setButtonType:NSToggleButton];
+    [button setState:NSOnState];
+
+    // and disable the menu
+    [statusItem setMenu:nil];
+}
+
+- (void)disableTrackPadMIDI {
+
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+        [trackpad setEnabled:NO];
+    });
+
+    [statusItem setMenu:menu];
+
+    NSButton *button = [statusItem button];
+    [button setButtonType:NSMomentaryLightButton];
+    [button setButtonType:NSOffState];
+
+}
+
+- (void)initializeStatusMenu {
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+
+    NSImage *offImage = [NSImage imageNamed:@"MIDI"];
+    NSImage *onImage = [NSImage imageNamed:@"MIDIOn"];
+
+    [offImage setTemplate:YES];
+    [onImage setTemplate:YES];
+
+    NSButton *button = [statusItem button];
+    [button setTitle:@"MIDI"];
+    [button setImage:offImage];
+    [button setAlternateImage:onImage];
+
+    // set up target/action for disabling midi
+    [button setTarget:self];
+    [button setAction:@selector(disableTrackPadMIDI)];
+
+    // create the status item menu and its items
+    menu = [[NSMenu alloc] initWithTitle:@""];
+
+    NSMenuItem *enableItem = [[NSMenuItem alloc] initWithTitle:@"Enable"
+                                                        action:@selector(enableTrackPadMIDI)
+                                                 keyEquivalent:@""];
+
+    NSMenuItem *preferencesItem = [[NSMenuItem alloc] initWithTitle:@"Preferences…"
+                                                             action:@selector(openPreferences)
+                                                      keyEquivalent:@""];
+
+    NSMenuItem *quitItem = [[NSMenuItem alloc] initWithTitle:@"Quit ForceMIDI"
+                                                      action:@selector(quit)
+                                               keyEquivalent:@""];
+
+    // add the items to the status menu
+    [menu addItem:enableItem];
+    [menu addItem:[NSMenuItem separatorItem]];
+    [menu addItem:preferencesItem];
+    [menu addItem:[NSMenuItem separatorItem]];
+    [menu addItem:quitItem];
+
+    [statusItem setMenu:menu];
+}
+
+- (void)openPreferences {
+    NSLog(@"Open prefs");
+}
+
+- (void)quit {
+    [NSApp terminate:self];
+}
 
 
 @end
