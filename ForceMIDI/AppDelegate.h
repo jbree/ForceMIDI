@@ -10,6 +10,7 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+- (IBAction)enableTrackPadMIDI:(id)sender;
 
 @end
 

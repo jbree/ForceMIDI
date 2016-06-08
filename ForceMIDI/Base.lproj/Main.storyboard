@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -642,10 +643,119 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="statusMenu" destination="Yza-gc-my1" id="SQB-O5-IFn"/>
+                    </connections>
+                </customObject>
+                <menu id="Yza-gc-my1">
+                    <items>
+                        <menuItem title="Enable" id="V8c-xF-cqE">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="enableTrackPadMIDI:" target="Voe-Tx-rLC" id="eG7-uW-cMP"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="mZ6-vq-e4j"/>
+                        <menuItem title="Preferences…" id="3NH-9e-f0n">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="openPreferences:" target="Voe-Tx-rLC" id="yPN-rD-rzF"/>
+                                <segue destination="omd-9i-YoY" kind="show" id="Ign-li-V41"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="ppG-eu-1L4"/>
+                        <menuItem title="Quit ForceMIDI" id="Mge-pp-W0A">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="terminate:" target="hnw-xV-0zn" id="dCN-lc-dYm"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="58.5" y="-35"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="Q1e-cw-P5B">
+            <objects>
+                <windowController id="omd-9i-YoY" sceneMemberID="viewController">
+                    <window key="window" title="ForceMIDI Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="YjY-od-Jh8">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="590" width="350" height="450"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+                    </window>
+                    <connections>
+                        <segue destination="FPn-ac-Vsw" kind="relationship" relationship="window.shadowedContentViewController" id="Ovu-4h-SyC"/>
+                    </connections>
+                </windowController>
+                <customObject id="Cu8-ju-OtD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272" y="379"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Dys-Z8-zqj">
+            <objects>
+                <viewController id="FPn-ac-Vsw" sceneMemberID="viewController">
+                    <view key="view" id="s2Q-Sa-U9U">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="440"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="EZv-qx-K4X">
+                                <rect key="frame" x="17" y="16" width="366" height="244"/>
+                                <view key="contentView" id="S98-lc-4DQ">
+                                    <rect key="frame" x="1" y="1" width="364" height="228"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="bdK-7d-qXo"/>
+                                </constraints>
+                                <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </box>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQC-RQ-4B9">
+                                <rect key="frame" x="98" y="402" width="108" height="18"/>
+                                <buttonCell key="cell" type="check" title="Start on Login" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="TBZ-R5-cvE">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WH2-Qm-xk8">
+                                <rect key="frame" x="18" y="403" width="76" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Application:" id="n8g-Gi-Ih5">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RT1-ki-iEP">
+                                <rect key="frame" x="58" y="378" width="36" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MIDI:" id="yGc-yW-eCz">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dj0-5V-qlv">
+                                <rect key="frame" x="98" y="377" width="153" height="18"/>
+                                <buttonCell key="cell" type="check" title="Send MIDI Aftertouch" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="ZgL-CT-J0h">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="EZv-qx-K4X" firstAttribute="leading" secondItem="s2Q-Sa-U9U" secondAttribute="leading" constant="20" symbolic="YES" id="cUi-JV-lnz"/>
+                            <constraint firstAttribute="bottom" secondItem="EZv-qx-K4X" secondAttribute="bottom" constant="20" symbolic="YES" id="mgx-Kg-tYI"/>
+                            <constraint firstAttribute="trailing" secondItem="EZv-qx-K4X" secondAttribute="trailing" constant="20" symbolic="YES" id="yiZ-Ps-bgV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="2co-Fn-4fD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="439"/>
         </scene>
     </scenes>
 </document>

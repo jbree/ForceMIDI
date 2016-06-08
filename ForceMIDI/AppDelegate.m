@@ -9,12 +9,13 @@
 #import "AppDelegate.h"
 
 #import "TrackPadMIDIDevice.h"
+#import "PreferencesViewController.h"
 
 @interface AppDelegate () {
     TrackPadMIDIDevice* trackpad;
 
+    __weak IBOutlet NSMenu *statusMenu;
     NSStatusItem* statusItem;
-    NSMenu *menu;
 }
 
 @end
@@ -31,7 +32,7 @@
     [trackpad setEnabled:NO];
 }
 
-- (void)enableTrackPadMIDI {
+- (IBAction)enableTrackPadMIDI:(id)sender {
     NSButton *button = [statusItem button];
 
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
@@ -52,7 +53,7 @@
         [trackpad setEnabled:NO];
     });
 
-    [statusItem setMenu:menu];
+    [statusItem setMenu:statusMenu];
 
     NSButton *button = [statusItem button];
     [button setButtonType:NSMomentaryLightButton];
@@ -78,32 +79,10 @@
     [button setTarget:self];
     [button setAction:@selector(disableTrackPadMIDI)];
 
-    // create the status item menu and its items
-    menu = [[NSMenu alloc] initWithTitle:@""];
-
-    NSMenuItem *enableItem = [[NSMenuItem alloc] initWithTitle:@"Enable"
-                                                        action:@selector(enableTrackPadMIDI)
-                                                 keyEquivalent:@""];
-
-    NSMenuItem *preferencesItem = [[NSMenuItem alloc] initWithTitle:@"Preferences…"
-                                                             action:@selector(openPreferences)
-                                                      keyEquivalent:@""];
-
-    NSMenuItem *quitItem = [[NSMenuItem alloc] initWithTitle:@"Quit ForceMIDI"
-                                                      action:@selector(quit)
-                                               keyEquivalent:@""];
-
-    // add the items to the status menu
-    [menu addItem:enableItem];
-    [menu addItem:[NSMenuItem separatorItem]];
-    [menu addItem:preferencesItem];
-    [menu addItem:[NSMenuItem separatorItem]];
-    [menu addItem:quitItem];
-
-    [statusItem setMenu:menu];
+    [statusItem setMenu:statusMenu];
 }
 
-- (void)openPreferences {
+- (IBAction)openPreferences:(id)sender {
     NSLog(@"Open prefs");
 }
 
